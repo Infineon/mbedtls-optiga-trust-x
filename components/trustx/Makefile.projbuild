@@ -1,0 +1,12 @@
+# Anyone compiling mbedTLS code needs the name of the
+# alternative config file
+#CPPFLAGS += -DMBEDTLS_CONFIG_FILE='"mbedtls/esp_config.h"'
+
+# Catch usage of deprecated mbedTLS functions when building tests
+#ifneq ("$(TEST_COMPONENTS_LIST)","")
+#CPPFLAGS += -DMBEDTLS_DEPRECATED_WARNING
+#endif
+
+# OPTIGA(TM) TRust X provides alternative implementation of ECDSA ECDHE functions in mbedTLS
+CPPFLAGS +=  -DMBEDTLS_ECDH_GEN_PUBLIC_ALT -DMBEDTLS_ECDH_COMPUTE_SHARED_ALT -DMBEDTLS_ECDSA_VERIFY_ALT	-DMBEDTLS_ECDSA_SIGN_ALT \
+             -DPAL_OS_HAS_EVENT_INIT -DUSE_CMDLIB_WITH_RTOS -DMBEDTLS_SSL_CIPHERSUITES=MBEDTLS_TLS_ECDHE_ECDSA_WITH_AES_128_CCM_8
