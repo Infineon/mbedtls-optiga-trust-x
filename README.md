@@ -1,4 +1,4 @@
-# Infineon's OPTIGA&trade; Trust X mbedTLS example integration for ESP32
+# Infineon OPTIGA&trade; Trust X </br> mbedTLS example integration for ESP32
 
 ## Description
 
