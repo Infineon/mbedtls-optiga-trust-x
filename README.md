@@ -12,7 +12,7 @@ This repository contains one of Application Notes for [OPTIGA™ Trust X](www.in
 In this guide you may find the following steps:
 * How to build (via refernces) the software and flash the development board
 * How to start a sample OpenSSL DTLS 1.2 server
-* How to run example HTTPS with TLS 1.2 communication with ESP32
+* How to run an example TLS 1.2 client with ESP32
 
 This example uses mbedTLS version 2.12 as a library handling the TLS 1.2 session and X.509 certificates. 
 This example uses OPTIGA&trade; Trust X to offload ECDHE and ECDSA operations from the standard mbedTLS impelemntations via a configuration.
