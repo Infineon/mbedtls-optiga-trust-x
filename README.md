@@ -8,6 +8,9 @@ This repository contains one of Application Notes for [OPTIGA™ Trust X](www.in
 * You can find more information about the security chip in the core [repository](https://github.com/Infineon/optiga-trust-x)
 * You can find other Application Notes in the respective [repository](https://github.com/Infineon/appnotes-optiga-trust-x)
 
+## What is mbedTLS
+[mbed TLS](https://tls.mbed.org/) (previously PolarSSL) is a wide-known implementation of the [TLS and SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security) protocols and the respective cryptographic algorithms. It is dual-licensed with the Apache License version 2.0 (with GPLv2 also available).
+
 ## Summary
 In this guide you may find the following steps:
 * How to build (via refernces) the software and flash the development board
@@ -29,9 +32,6 @@ In this example we use the following components:
 * OPTIGA™ Trust X Application Notes [Framework](https://github.com/Infineon/optiga-trust-x)
 * Infineon OPTIGA™ Trust X [Shield2Go](https://www.infineon.com/cms/en/product/evaluation-boards/s2go-security-optiga-x/)
 * Raspberry Pi (preffered), or any other Linux machine which has WiFi capability
-
-## What is mbedTLS
-[mbed TLS](https://tls.mbed.org/) (previously PolarSSL) is a wide-known implementation of the [TLS and SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security) protocols and the respective cryptographic algorithms. It is dual-licensed with the Apache License version 2.0 (with GPLv2 also available).
 
 ## How we use OPTIGA™ Trust X with mbedTLS
 Even though this particular example demonstrated a TLS connection using WiFi-chip ESP32, the way how mbedTLS is used here is generic for all mbedTLS capable systems. In this example we use macroses like `MBEDTLS_ECDH_COMPUTE_SHARED_ALT` provided by mbedTLS to enable **alt**ernative  function implementaions. For more details please refer to the respective [Wiki section](https://github.com/Infineon/mbedtls-optiga-trust-x/wiki#howto_mbedtls)
