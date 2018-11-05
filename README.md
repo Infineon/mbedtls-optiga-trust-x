@@ -8,7 +8,7 @@ This repository contains one of Application Notes for [OPTIGA™ Trust X](www.in
 * You can find more information about the security chip in the core [repository](https://github.com/Infineon/optiga-trust-x)
 * You can find other Application Notes in the respective [repository](https://github.com/Infineon/appnotes-optiga-trust-x)
 
-## What is mbedTLS
+## About mbedTLS
 [mbed TLS](https://tls.mbed.org/) (previously PolarSSL) is a wide-known implementation of the [TLS and SSL](https://en.wikipedia.org/wiki/Transport_Layer_Security) protocols and the respective cryptographic algorithms. It is dual-licensed with the Apache License version 2.0 (with GPLv2 also available).
 
 ## Summary
