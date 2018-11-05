@@ -33,7 +33,7 @@ In this example we use the following components:
 * Infineon OPTIGA™ Trust X [Shield2Go](https://www.infineon.com/cms/en/product/evaluation-boards/s2go-security-optiga-x/)
 * Raspberry Pi (preffered), or any other Linux machine which has WiFi capability
 
-## How we use OPTIGA™ Trust X with mbedTLS
+## How we use the OPTIGA™ Trust X with the mbedTLS
 Even though this particular example demonstrated a TLS connection using WiFi-chip ESP32, the way how mbedTLS is used here is generic for all mbedTLS capable systems. In this example we use macroses like `MBEDTLS_ECDH_COMPUTE_SHARED_ALT` provided by mbedTLS to enable **alt**ernative  function implementaions. For more details please refer to the respective [Wiki section](https://github.com/Infineon/mbedtls-optiga-trust-x/wiki#howto_mbedtls)
 
 ## Contributing
