@@ -2,7 +2,7 @@
 
 ## Description
 
-This repository contains one of Application Notes for [OPTIGA™ Trust X](www.infineon.com/optiga-trust-x) security chip.
+This repository contains one of Application Notes for [OPTIGA™ Trust X](https://www.infineon.com/cms/en/product/security-smart-card-solutions/optiga-embedded-security-solutions/optiga-trust/optiga-trust-x-sls-32aia/) security chip.
 
 * **You can find step-by-step get started guide on the [Wiki page](https://github.com/Infineon/mbedtls-optiga-trust-x/wiki) of the project**
 * You can find more information about the security chip in the core [repository](https://github.com/Infineon/optiga-trust-x)
@@ -37,7 +37,7 @@ In this example we use the following components:
 Even though this particular example demonstrated a TLS connection using WiFi-chip ESP32, the way how mbedTLS is used here is generic for all mbedTLS capable systems. In this example we use macroses like `MBEDTLS_ECDH_COMPUTE_SHARED_ALT` provided by mbedTLS to enable **alt**ernative  function implementaions. For more details please refer to the respective [Wiki section](https://github.com/Infineon/mbedtls-optiga-trust-x/wiki#howto_mbedtls)
 
 ## Contributing
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+Please read [CONTRIBUTING.md](https://github.com/Infineon/v2x_host_software_package/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
 ## License
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
