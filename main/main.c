@@ -357,24 +357,24 @@ void app_main()
 	uint8_t err_code;
 
 	gpios_init();
-    ESP_ERROR_CHECK( nvs_flash_init() );
+	ESP_ERROR_CHECK( nvs_flash_init() );
 
  	ESP_LOGI(TAG, "Init OPTIGA Trust X");
 	pal_os_event_init();
 	err_code = optiga_util_open_application(&optiga_comms);
-	ESP_ERROR_CHECK(err_code)
+	ESP_ERROR_CHECK(err_code);
 	
 	ESP_LOGI(TAG, "Reading OPTIGA Trust X certificate.");
 	// CONFIG_OPTIGA_TRUST_X_CERT_SLOT is generated as part of the make menuconfig step
 	err_code = optiga_util_read_data(CONFIG_OPTIGA_TRUST_X_CERT_SLOT, 0x09, my_cert, &my_cert_len);
 	esp_log_buffer_hex(TAG, my_cert, my_cert_len);
-	ESP_ERROR_CHECK(err_code)
+	ESP_ERROR_CHECK(err_code);
 	
 	ESP_LOGI(TAG, "Boosting the OPTIGA Trust X chip");
 	// 15mA is the maximum, 6 is the minimum
 	uint8_t curlim = 0x0e;
 	err_code = optiga_util_write_data(eCURRENT_LIMITATION, OPTIGA_UTIL_WRITE_ONLY, 0, &curlim, 1);
-	ESP_ERROR_CHECK(err_code)
+	ESP_ERROR_CHECK(err_code);
 
     initialise_wifi();
     xTaskCreate(&tls_handshake_task, "tls_handshake_task", 8192, NULL, 5, NULL);
